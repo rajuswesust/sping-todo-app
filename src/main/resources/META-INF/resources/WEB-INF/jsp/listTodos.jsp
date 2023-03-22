@@ -20,6 +20,7 @@
 					<th>Target Date</th>
 					<th>Is Done?</th>
 					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -30,6 +31,7 @@
 						<td>${todo.getTargetDate()}</td>
 						<td>${todo.isDone()}</td>
 						<td><a href="delete-todo?id=${todo.getId()}" class="btn btn-warning">DELETE</a></td>
+						<td><a href="update-todo?id=${todo.getId()}" class="btn btn-success">UPDATE</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
