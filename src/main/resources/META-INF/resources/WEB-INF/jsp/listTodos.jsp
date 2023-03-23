@@ -10,12 +10,12 @@
 	<div class="container">
 		<h2>welcome ${name}</h2>
 		<hr>
-		<h3>your todos are :</h3>
+		<h3>Your todos are :</h3>
 
 		<table class="table">
 			<thead>
 				<tr>
-					<th>id</th>
+<!-- 					<th>id</th> -->
 					<th>Description</th>
 					<th>Target Date</th>
 					<th>Is Done?</th>
@@ -26,7 +26,7 @@
 			<tbody>
 				<c:forEach items="${todos}" var="todo">
 					<tr>
-						<td>${todo.getId()}</td>
+<%-- 						<td>${todo.getId()}</td> --%>
 						<td>${todo.getDescription()}</td>
 						<td>${todo.getTargetDate()}</td>
 						<td>${todo.isDone()}</td>
